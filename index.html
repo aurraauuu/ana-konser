@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Konser | Konser Paling Epik Tahun Ini</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles if needed, atau bisa dimasukkan ke file CSS terpisah */
+        body {
+            font-family: 'Poppins', sans-serif; /* Contoh font utama */
+        }
+        .hero-section {
+            background-image: url('https://source.unsplash.com/random/1920x1080/?concert-stage,crowd'); /* Ganti dengan gambar konser Anda */
+            background-size: cover;
+            background-position: center;
+        }
+        /* Aksen warna custom untuk gradasi atau hover */
+        .accent-blue {
+            background-color: #00bcd4; /* Cyan */
+        }
+        .hover\:accent-blue:hover {
+            background-color: #00bcd4;
+        }
+        .text-accent-blue {
+            color: #00bcd4;
+        }
+        .border-accent-blue {
+            border-color: #00bcd4;
+        }
+        /* Gradasi aksen */
+        .gradient-accent {
+            background-image: linear-gradient(to right, #6D28D9, #00BCD4); /* Ungu ke Cyan */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <nav class="bg-gray-950 p-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white hover:text-accent-blue transition duration-300">
+                Konser.<span class="text-accent-blue">ID</span>
+            </a>
+
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-gray-300 hover:text-accent-blue transition duration-300">Beranda</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-accent-blue transition duration-300">Tentang</a></li>
+                <li><a href="#lineup" class="text-gray-300 hover:text-accent-blue transition duration-300">Line-Up</a></li>
+                <li><a href="#tickets" class="text-gray-300 hover:text-accent-blue transition duration-300">Tiket</a></li>
+                <li><a href="#faq" class="text-gray-300 hover:text-accent-blue transition duration-300">FAQ</a></li>
+            </ul>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 focus:outline-none focus:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-950 pt-4 pb-2">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="#home" class="block text-gray-300 hover:text-accent-blue transition duration-300 py-2">Beranda</a></li>
+                <li><a href="#about" class="block text-gray-300 hover:text-accent-blue transition duration-300 py-2">Tentang</a></li>
+                <li><a href="#lineup" class="block text-gray-300 hover:text-accent-blue transition duration-300 py-2">Line-Up</a></li>
+                <li><a href="#tickets" class="block text-gray-300 hover:text-accent-blue transition duration-300 py-2">Tiket</a></li>
+                <li><a href="#faq" class="block text-gray-300 hover:text-accent-blue transition duration-300 py-2">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-white max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6">
+                SOUNDBLAST <span class="text-accent-blue">FEST</span> 2025
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-300">
+                Rasakan pengalaman musik tak terlupakan bersama bintang-bintang favoritmu!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#tickets" class="border-2 border-accent-blue text-accent-blue font-bold py-3 px-8 rounded-full shadow-lg hover:bg-accent-blue hover:text-gray-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    Beli Tiket Sekarang!
+                </a>
+                <a href="#lineup" class="border-2 border-accent-blue text-accent-blue font-bold py-3 px-8 rounded-full shadow-lg hover:bg-accent-blue hover:text-gray-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    Lihat Line-Up
+                </a>
+            </div>
+            <div class="mt-10 text-xl font-semibold text-gray-200">
+                <p>Konser Dimulai Dalam:</p>
+                <div class="flex justify-center mt-2 space-x-4">
+                    <span class="bg-gray-800 bg-opacity-70 px-4 py-2 rounded-lg">120 <span class="block text-sm">Hari</span></span>
+                    <span class="bg-gray-800 bg-opacity-70 px-4 py-2 rounded-lg">08 <span class="block text-sm">Jam</span></span>
+                    <span class="bg-gray-800 bg-opacity-70 px-4 py-2 rounded-lg">35 <span class="block text-sm">Menit</span></span>
+                    <span class="bg-gray-800 bg-opacity-70 px-4 py-2 rounded-lg">59 <span class="block text-sm">Detik</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-900 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Tentang <span class="text-accent-blue">SOUNDBLAST FEST</span></h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        SOUNDBLAST FEST adalah festival musik tahunan terbesar yang menyatukan berbagai genre dan talenta terbaik dari seluruh dunia. Kami berdedikasi untuk menciptakan pengalaman konser yang tak terlupakan, penuh energi, dan menginspirasi bagi semua pecinta musik.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Sejak dimulai pada tahun 2020, SOUNDBLAST FEST telah menjadi rumah bagi jutaan penggemar dan panggung bagi ratusan musisi legendaris. Bergabunglah dengan kami tahun ini untuk merayakan kekuatan musik!
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="about.jpg" alt="Tentang Konser" class="rounded-lg shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-accent-blue opacity-20 rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lineup" class="py-20 bg-gray-950 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Line-Up <span class="text-accent-blue">Artis</span></h2>
+            <p class="text-center text-lg text-gray-400 mb-12">Siapkan dirimu untuk menyaksikan penampilan memukau dari para bintang berikut!</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="concert1.jpg" alt="Band A" class="w-full h-56 object-cover object-center group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">The Roaring Echoes</h3>
+                        <p class="text-gray-400 text-sm">Genre: Rock Alternatif</p>
+                        <p class="text-gray-300 mt-4 text-sm">Band legendaris dengan hits yang akan membuatmu bernostalgia dan berjingkrak!</p>
+                        <a href="#" class="inline-block mt-4 text-accent-blue hover:underline text-sm">Lihat Profil</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="concert2.jpg" alt="Penyanyi B" class="w-full h-56 object-cover object-center group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Luna Sparks</h3>
+                        <p class="text-gray-400 text-sm">Genre: Pop Elektronik</p>
+                        <p class="text-gray-300 mt-4 text-sm">Suara merdu dan melodi futuristik yang akan menghipnotis panggung utama.</p>
+                        <a href="#" class="inline-block mt-4 text-accent-blue hover:underline text-sm">Lihat Profil</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="concert3.jpg" alt="Rapper C" class="w-full h-56 object-cover object-center group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">MC Rhyme Flow</h3>
+                        <p class="text-gray-400 text-sm">Genre: Hip-Hop / Rap</p>
+                        <p class="text-gray-300 mt-4 text-sm">Lirik tajam dan ritme energik yang akan membuatmu ikut mengangguk.</p>
+                        <a href="#" class="inline-block mt-4 text-accent-blue hover:underline text-sm">Lihat Profil</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="concert4.jpg" alt="DJ D" class="w-full h-56 object-cover object-center group-hover:scale-105 transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-white mb-2">DJ Pulse Beat</h3>
+                        <p class="text-gray-400 text-sm">Genre: EDM / Dance</p>
+                        <p class="text-gray-300 mt-4 text-sm">Alunan musik elektronik yang akan membuatmu menari tanpa henti hingga pagi!</p>
+                        <a href="#" class="inline-block mt-4 text-accent-blue hover:underline text-sm">Lihat Profil</a>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="py-20 bg-gray-900 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Dapatkan <span class="text-accent-blue">Tiketmu</span> Sekarang!</h2>
+            <p class="text-center text-lg text-gray-400 mb-12">Pilih kategori tiket yang sesuai dengan pengalaman konser impianmu.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 text-center border-t-4 border-accent-blue transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-3xl font-bold text-white mb-4">Early Bird</h3>
+                    <p class="text-gray-300 mb-2">Periode Terbatas!</p>
+                    <p class="text-gray-400 text-sm">Hingga 1 Juni 2025</p>
+                    <p class="text-5xl font-extrabold text-accent-blue my-6">Rp500.000</p>
+                    <ul class="text-gray-300 text-left mx-auto max-w-xs space-y-2 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Akses Umum 1 Hari</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Merchandise Eksklusif (Terbatas)</li>
+                    </ul>
+                    <button class="w-full bg-blue-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
+                        Pesan Sekarang
+                    </button>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 text-center border-t-4 border-purple-500 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-3xl font-bold text-white mb-4">Regular</h3>
+                    <p class="text-gray-300 mb-2">Harga Normal</p>
+                    <p class="text-gray-400 text-sm">Mulai 2 Juni 2025</p>
+                    <p class="text-5xl font-extrabold text-purple-500 my-6">Rp750.000</p>
+                    <ul class="text-gray-300 text-left mx-auto max-w-xs space-y-2 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Akses Umum 1 Hari</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Akses Area Konser</li>
+                    </ul>
+                    <button class="w-full bg-purple-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
+                        Pesan Sekarang
+                    </button>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 text-center border-t-4 border-yellow-500 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-3xl font-bold text-white mb-4">VIP Pass</h3>
+                    <p class="text-gray-300 mb-2">Pengalaman Terbaik!</p>
+                    <p class="text-gray-400 text-sm">Terbatas!</p>
+                    <p class="text-5xl font-extrabold text-yellow-500 my-6">Rp1.500.000</p>
+                    <ul class="text-gray-300 text-left mx-auto max-w-xs space-y-2 mb-8">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Akses Semua Area + VIP Lounge</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Jalur Cepat Masuk</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Souvenir Eksklusif</li>
+                    </ul>
+                    <button class="w-full bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:shadow-xl transform hover:scale-105 transition duration-300">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-gray-950 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Pertanyaan yang Sering <span class="text-accent-blue">Diajukan</span></h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2 cursor-pointer flex justify-between items-center" onclick="toggleFaq('faq1')">
+                        Kapan dan di mana SOUNDBLAST FEST 2025 akan diselenggarakan?
+                        <svg class="w-6 h-6 text-accent-blue transform transition-transform duration-300" id="icon-faq1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </h3>
+                    <p class="text-gray-300 mt-4 hidden" id="content-faq1">
+                        SOUNDBLAST FEST 2025 akan diselenggarakan pada tanggal 12-14 September 2025 di Lapangan Parkir Timur Senayan, Jakarta.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2 cursor-pointer flex justify-between items-center" onclick="toggleFaq('faq2')">
+                        Bagaimana cara membeli tiket?
+                        <svg class="w-6 h-6 text-accent-blue transform transition-transform duration-300" id="icon-faq2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </h3>
+                    <p class="text-gray-300 mt-4 hidden" id="content-faq2">
+                        Anda bisa membeli tiket langsung melalui bagian "Dapatkan Tiketmu Sekarang!" di halaman ini atau kunjungi mitra ticketing resmi kami yang akan diumumkan segera.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2 cursor-pointer flex justify-between items-center" onclick="toggleFaq('faq3')">
+                        Apakah ada batasan usia untuk menghadiri konser ini?
+                        <svg class="w-6 h-6 text-accent-blue transform transition-transform duration-300" id="icon-faq3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </h3>
+                    <p class="text-gray-300 mt-4 hidden" id="content-faq3">
+                        Konser ini terbuka untuk semua umur, namun pengunjung di bawah 12 tahun wajib didampingi oleh orang dewasa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 py-10 px-4 text-center text-gray-400">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Konser.ID. Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-accent-blue transition duration-300">Privasi</a>
+                <a href="#" class="hover:text-accent-blue transition duration-300">Syarat & Ketentuan</a>
+                <a href="#" class="hover:text-accent-blue transition duration-300">Kontak</a>
+            </div>
+            <div class="mt-6 text-gray-500 text-sm">
+                Desain dengan <span class="text-red-500">&hearts;</span> dan Tailwind CSS
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        function toggleFaq(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+    </script>
+
+</body>
+</html>
